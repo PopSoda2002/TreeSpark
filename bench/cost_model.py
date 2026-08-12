@@ -53,6 +53,7 @@ def main():
         del cache, out
         torch.cuda.empty_cache()
         print(f"bs={bs:<4} " + "  ".join(f"k={k}:{results[bs][k]:6.1f}ms" for k in KS), flush=True)
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump(results, f, indent=1)
     print(f"-> {OUT}")

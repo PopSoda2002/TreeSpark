@@ -2,6 +2,8 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, DynamicCache
 from treespark.sampling import probs_from_logits, sample_from_probs
 
+# Generic HF pair used only by the module self-tests here and in
+# tree_speculative.py; the paper's drafter is DSpark (see README quickstart).
 TARGET_MODEL = "Qwen/Qwen2.5-7B-Instruct"
 DRAFT_MODEL = "Qwen/Qwen2.5-0.5B-Instruct"
 TARGET_DEVICE = "cuda"
