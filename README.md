@@ -1,7 +1,7 @@
 # TreeSpark
 
-Calibrated, load-adaptive draft trees for semi-autoregressive speculative
-decoding.
+Official implementation of *TreeSpark: Calibrated, Load-Adaptive Draft Trees
+for Semi-Autoregressive Speculative Decoding*.
 
 One calibrated acceptance estimate — a two-parameter map fitted on the
 drafter's Markov conditional — governs the draft tree at every scale: which
